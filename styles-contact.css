@@ -1,0 +1,177 @@
+/*This is my 201 Contact Web Page Project using Eric Meyer's reset at the top of my page -- your CSS starts on line 56 */
+
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/* ---------- This is the beginning of my 201 Contact Web Page Project ------------ */
+
+html, body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-image: url("images/flower-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  text-align: center;
+	
+}
+
+.center {
+	width: 40%; /*------this is for responsiveness------*/
+	border-radius: 25px;
+	min-width: 250px; 
+	padding: 2%;
+    margin: 75px auto;
+ 	background: rgb(255,255,255,0.6); /*this uses opacity of 60% for the background color*/
+	text-align: center;
+	/* ------This is my fade in code------ */
+	animation: fadeIn 5s;
+	-webkit-animation: fadeIn 5s;
+	-moz-animation: fadeIn 5s;
+	-o-animation: fadeIn 5s;
+	-ms-animation: fadeIn 5s;
+	/*border: 4px dashed white;*/
+}
+
+@keyframes fade_in {
+	0% { opacity: 0; }
+	100% { opacity: 1;}
+}
+
+@-moz-keyframes fadeIn {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+}
+
+@-webkit-keyframes fadeIn {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+}
+
+@-o-keyframes fadeIn {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+}
+
+@-ms-keyframes fadeIn {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+}
+
+/* ------END of fade in code------- */
+   
+#logo {
+    width: 50; /*-----this is for responsiveness-----*/
+	margin-top: 50px;
+	margin-bottom: 16px;
+	text-align: center;
+	/* --border: 3px dashed red;-- */
+}
+
+h1 {
+	font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-size: 2em;
+    margin: 0px auto 15px auto;
+    color: #fa96c5;
+}
+
+h2 {
+	font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-size: 1.5em;
+    line-height: 1.4;
+    color: #fa96c5;
+    padding: 0px 0px;
+    margin: 0px auto 10px auto;
+}
+
+p {
+	font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-size: 1.2em;
+    line-height: 1.6;
+    color: #fa96c5;
+	letter-spacing: .2em;
+}
+nav{
+	font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-size: 1.2em;
+	width: 80%; /* ---This is for responsiveness--- */
+	margin: 0 auto; /* This centers the entire nav element inside the center div */
+	border-width: 3px 0; /* This puts a 3 pixel porder on top and bottom of the nav element, the zero eliminates the left and right sides of the border */
+	text-align: center;
+	margin-top: 1em; /* This adds a bit of space above the nav element */
+	/*------border: dashed turquoise;------*/
+}
+
+nav li{
+	display: inline; /*This allows the block level elements to display next to one another */
+}
+
+nav a{
+	display: inline-block;
+	padding: 10px; /* This adds space around each of the links */
+}
+ 
+a{
+	color: white;
+	text-decoration: none; /* This removes the underline */
+	font-style: italic;
+	/*  font-weight: bold;  */
+}    
+
+a:hover{
+	color: black;
+	background: pink; /* This is the pink hover effect -- you'll want to change this! */
+}
