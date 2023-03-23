@@ -166,8 +166,8 @@ nav a{
  
 a{
 	color: white;
-	text-decoration: none; /* This removes the underline */
-	font-style: italic;
+	text-decoration: underline; 
+	 /*  font-style: italic;  */
 	/*  font-weight: bold;  */
 }    
 
